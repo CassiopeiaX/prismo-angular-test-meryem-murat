@@ -1,0 +1,26 @@
+header {
+  width: auto;
+  height: 10vh;
+}
+
+img {
+  object-fit: cover;
+  width: 20vw;
+  height: 10vh;
+}
+
+div {
+  float: right;
+  line-height: 10vh;
+  font-size: 1.5em;
+}
+
+a {
+  text-decoration-line: none;
+  color: black;
+}
+
+a:hover, a:focus {
+	text-decoration: underline;
+	color: #444;
+}
