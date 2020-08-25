@@ -14,6 +14,7 @@ import { MemberCardComponent } from './member-card/member-card.component';
 import { MembersService } from "./service/members-list.service";
 import { MembersComponent } from "./service/members.component";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MemberProfilComponent } from './member-profil/member-profil.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MembersListComponent,
     MemberCardComponent,
     MembersComponent,
+    MemberProfilComponent,
 
     ],
   imports: [

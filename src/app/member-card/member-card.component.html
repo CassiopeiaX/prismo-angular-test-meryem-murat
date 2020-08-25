@@ -1,8 +1,7 @@
 <mat-card *ngFor="let data of dataObject">
-<mat-card-content>
-<div>
-  <img src="../assets/img/avatars/{{data.avatar}}">
-  <span>{{data.firstname}} {{data.lastname}}</span>
-</div>
-</mat-card-content>
+  <mat-card-content>
+    <img src="../assets/img/avatars/{{data.avatar}}"/>
+    <span>{{data.firstname}} {{data.lastname}}</span>
+    <a routerLink="../member/{{data.id}}">Profil</a>
+  </mat-card-content>
 </mat-card>

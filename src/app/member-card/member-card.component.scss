@@ -3,26 +3,37 @@ mat-card {
   margin-top: 1%;
   margin-right: 10%;
   margin-left: 10%;
-  vertical-align: middle;
   padding-left: 5%;
 }
 
 img {
-  height: 5vw;
-  width: 5vw;
-  object-fit: cover;
-  margin-bottom: 0px;
+  display: inline-block;
+  margin-top: 10vh;
+  margin-left: 3vh;
+  height: 6vw;
+  width: 6vw;
 }
 
 span {
-vertical-align: middle;
-text-align: center;
-margin-top: 0px;
+  line-height: 10vh;
+  margin-left: 15vh;
 }
 
-div {
+ span, a {
   font-size: 4vh;
   font-family: monospace;
   vertical-align: middle;
 }
 
+a {
+  float: right;
+  padding-right: 5vw;
+  line-height: 15vh;
+  text-decoration-line: underline;
+  color: black;
+}
+
+a:hover, a:focus {
+	text-decoration: none;
+	color: #444;
+}

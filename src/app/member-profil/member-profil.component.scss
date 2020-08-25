@@ -1,0 +1,34 @@
+img {
+  float: left;
+  padding-left: 80vh;
+  height: 12vw;
+  width: 12vw;
+}
+
+#name {
+  float: left;
+  padding-left: 10vh;
+  padding-top: 10vh;
+  font-size: 6vh;
+  font-family: monospace;
+  vertical-align: middle;
+}
+
+#function {
+  float: right;
+  padding-right: 60vh;
+  margin-top: 5vh;
+  font-size: 4vh;
+  font-family: monospace;
+  vertical-align: middle;
+}
+
+#desc {
+  text-align: center;
+  padding-top: 35vh;
+  padding-left: 80vh;
+  padding-right: 50vh;
+  font-size: 2.5vh;
+  font-family: monospace;
+  vertical-align: middle;
+}
