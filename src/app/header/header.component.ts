@@ -12,14 +12,6 @@ export class HeaderComponent implements OnInit {
     var lien = this.router.url;
   }
 
-    isTrueRoute = false;
-    isFalseRoute = true;
-
-    if(lien='/welcome'){
-      this.isTrueRoute=true;
-      this.isFalseRoute=false;
-    }
-
   ngOnInit(): void {
 
   }

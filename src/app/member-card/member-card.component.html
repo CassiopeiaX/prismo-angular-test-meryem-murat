@@ -1,1 +1,8 @@
-<p>member-card works!</p>
+<mat-card *ngFor="let data of dataObject">
+<mat-card-content>
+<div>
+  <img src="../assets/img/avatars/{{data.avatar}}">
+  <span>{{data.firstname}} {{data.lastname}}</span>
+</div>
+</mat-card-content>
+</mat-card>

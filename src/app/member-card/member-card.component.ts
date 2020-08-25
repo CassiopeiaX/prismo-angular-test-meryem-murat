@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { MembersService } from '../service/members-list.service';
+
+import {MatCardModule} from '@angular/material/card';
 
 @Component({
   selector: 'app-member-card',
@@ -7,9 +10,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MemberCardComponent implements OnInit {
 
-  constructor() { }
+  dataObject :any=[];
+
+  constructor(private service:MembersService) { }
 
   ngOnInit(): void {
-  }
+    this.service.getData()
+      .subscribe(resData=>this.dataObject =resData);
+      console.log("data : "+(this.dataObject)+"hey")
+}
 
 }
