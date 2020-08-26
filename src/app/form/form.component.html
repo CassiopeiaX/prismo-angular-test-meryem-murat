@@ -1,0 +1,41 @@
+<br/><br/><div>Ajouter un membre</div><br/><br/>
+
+<form #userForm="ngForm" (ngSubmit)="onFormSubmit(userForm)">
+<div class="form-group">
+  <label>Prénom </label><br />
+  <input type="text"
+          ngModel
+          name="firstname"
+          id="firstname"
+          class="form-control">
+  <br />
+  <label>Nom </label><br />
+  <input type="text"
+          ngModel
+          name="name"
+          id="name"
+          class="form-control">
+          <br />
+<label>Photo </label><br />
+<input type="text" name="avatar" id="avatar"value="example.png">
+<br />
+  <label>Poste</label><br />
+  <input type="text"
+          ngModel
+          name="job"
+          id="job"
+          class="form-control">
+          <br />
+  <label>Description </label><br /><br />
+  <textarea
+          ngModel
+          rows="5"
+          cols="33"
+          name="desc"
+          id="desc"
+          class="form-control">
+  </textarea>
+  <br /><br />
+  <button class="btn btn-primary">Valider</button>
+</div>
+</form>

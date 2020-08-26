@@ -15,6 +15,8 @@ import { MembersService } from "./service/members-list.service";
 import { MembersComponent } from "./service/members.component";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MemberProfilComponent } from './member-profil/member-profil.component';
+import { FormComponent } from './form/form.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,7 @@ import { MemberProfilComponent } from './member-profil/member-profil.component';
     MemberCardComponent,
     MembersComponent,
     MemberProfilComponent,
+    FormComponent,
 
     ],
   imports: [
@@ -34,9 +37,10 @@ import { MemberProfilComponent } from './member-profil/member-profil.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    FormsModule,
 
   ],
-  providers: [MembersService],
+  providers: [MembersService,FormComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

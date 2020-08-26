@@ -16,8 +16,7 @@ export class MemberCardComponent implements OnInit {
 
   ngOnInit(): void {
     this.service.getData()
-      .subscribe(resData=>this.dataObject =resData);
-      console.log("data : "+(this.dataObject)+"hey")
+      .subscribe(resData=>{this.dataObject =resData;console.log(this.dataObject)});
 }
 
 }
